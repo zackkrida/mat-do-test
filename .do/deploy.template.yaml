@@ -2,6 +2,7 @@
 # for guidelines on writing application specs for Digital Ocean.
 spec:
   name: sample-mathesar
+  region: nyc
   services:
     - name: mathesar-web
       image:
@@ -16,9 +17,6 @@ spec:
         - key: ALLOWED_HOSTS
           scope: RUN_TIME
           value: ${APP_DOMAIN}
-        - key: SECRET_KEY
-          scope: RUN_TIME
-          value: Replace with a key generated from https://djecrety.ir/
       http_port: 8000
       routes:
         - path: /
