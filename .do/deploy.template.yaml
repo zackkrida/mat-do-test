@@ -3,7 +3,7 @@
 spec:
   name: sample-mathesar
   services:
-    - name: Mathesar Web
+    - name: mathesar-web
       image:
           registry_type: DOCKER_HUB
           registry: mathesar
